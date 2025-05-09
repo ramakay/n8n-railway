@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-ARG N8N_VERSION=1.56.1
+ARG N8N_VERSION=1.91.3
 
 RUN apk add --update graphicsmagick tzdata
 
@@ -17,3 +17,4 @@ EXPOSE $PORT
 ENV N8N_USER_ID=root
 
 CMD export N8N_PORT=$PORT && n8n start
+#https://github.com/maslaknikolai/n8n-railway
